@@ -1,4 +1,4 @@
-export interface Artwork {
+export interface Data {
     id: number;
     title: string;
     place_of_origin: string | null;
@@ -8,7 +8,7 @@ export interface Artwork {
     date_end: number | null;
 }
 
-export interface ApiResponse {
+export interface Response {
     pagination: {
         total: number;
         limit: number;
@@ -16,5 +16,5 @@ export interface ApiResponse {
         total_pages: number;
         current_page: number;
     };
-    data: Artwork[];
+    data: Data[];
 }
